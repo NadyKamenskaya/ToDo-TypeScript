@@ -1,0 +1,66 @@
+env:
+  browser: true
+  es2021: true
+
+extends:
+  - airbnb
+  - airbnb-typescript
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+  - plugin:@typescript-eslint/recommended
+
+parser: '@typescript-eslint/parser'
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: latest
+  sourceType: module
+  project: 'tsconfig.json'
+  tsconfigRootDir: './'
+
+overrides: [
+  {
+    files: ['*.ts', '*.tsx'],
+    parserOptions: {
+      project: 'tsconfig.json'
+    }
+  }
+]
+
+plugins:
+  - react
+  - '@typescript-eslint'
+
+rules:
+  '@typescript-eslint/no-shadow': 0
+  '@typescript-eslint/no-redeclare': 0
+  '@typescript-eslint/no-empty-function': off
+  consistent-return: 0
+  react/function-component-definition:
+    [ 2, { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }]
+  import/prefer-default-export: 0
+  react/jsx-props-no-spreading: 0
+  react/require-default-props: 0
+  react/button-has-type: 0
+  react/no-unstable-nested-components: [2, { allowAsProps: true }]
+  react/no-array-index-key: 0
+  class-methods-use-this: 0
+  react/destructuring-assignment: 0
+  react/react-in-jsx-scope: 0
+  import/extensions: 0
+  import/no-unresolved: 0
+  react/prop-types: 0
+  no-console: 0
+  functional/no-conditional-statements: 0
+  functional/no-expression-statements: 0
+  functional/immutable-data: 0
+  functional/functional-parameters: 0
+  functional/no-try-statement: 0
+  functional/no-throw-statement: 0
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
+  testing-library/no-debug: 0
+  react/jsx-filename-extension: [1, { "extensions": [".ts", ".tsx"] }]
+  '@typescript-eslint/no-explicit-any': off
+  import/no-cycle: off
+  
