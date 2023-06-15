@@ -1,6 +1,6 @@
 # ToDo-TypeScript
 
-<!-- [![GitHub Actions](https://github.com/NadyKamenskaya/ToDo/actions/workflows/github-actions.yml/badge.svg)](https://github.com/NadyKamenskaya/ToDo/actions/workflows/github-actions.yml) -->
+[![GitHub Actions](https://github.com/NadyKamenskaya/ToDo-TypeScript/actions/workflows/github-actions.yml/badge.svg)](https://github.com/NadyKamenskaya/ToDo-TypeScript/actions/workflows/github-actions.yml)
 
 ## Description
 
@@ -57,4 +57,4 @@ https://github.com/NadyKamenskaya/ToDo/assets/106657729/55d5c342-b7ef-417e-b1e1-
 
 _You can try UX/UI-friendly react app by clicking on the link below!_ 👇🏻
 
-[_**Click me**_]()
+[_**Click me**_](https://nady-to-do-type-script.vercel.app/)
